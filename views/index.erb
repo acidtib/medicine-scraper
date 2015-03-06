@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>medicine-scraper</title>
+</head>
+<body>
+
+<ul>
+  <% @medilexicon.css('#wrapper #level0 #main ul li').each do |medicine| %>
+    <li><%= medicine.content %></li>
+  <% end %>
+</ul>
+
+
+</body>
+</html>
